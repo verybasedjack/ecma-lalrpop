@@ -1,0 +1,5 @@
+grammar;
+
+pub Number: i64 = {
+    <n:r"[0-9]+"> => n.parse().unwrap(),
+};
